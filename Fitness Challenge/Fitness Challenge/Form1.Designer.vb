@@ -25,6 +25,7 @@ Partial Class frmFitness
         Me.mnuFitness = New System.Windows.Forms.MenuStrip()
         Me.mnuFile = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnuClear = New System.Windows.Forms.ToolStripMenuItem()
+        Me.mnuExit = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnuFitness.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -39,7 +40,7 @@ Partial Class frmFitness
         '
         'mnuFile
         '
-        Me.mnuFile.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuClear})
+        Me.mnuFile.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuClear, Me.mnuExit})
         Me.mnuFile.Name = "mnuFile"
         Me.mnuFile.Size = New System.Drawing.Size(37, 20)
         Me.mnuFile.Text = "&File"
@@ -49,6 +50,12 @@ Partial Class frmFitness
         Me.mnuClear.Name = "mnuClear"
         Me.mnuClear.Size = New System.Drawing.Size(180, 22)
         Me.mnuClear.Text = "&Clear"
+        '
+        'mnuExit
+        '
+        Me.mnuExit.Name = "mnuExit"
+        Me.mnuExit.Size = New System.Drawing.Size(180, 22)
+        Me.mnuExit.Text = "E&xit"
         '
         'frmFitness
         '
@@ -69,4 +76,5 @@ Partial Class frmFitness
     Friend WithEvents mnuFitness As MenuStrip
     Friend WithEvents mnuFile As ToolStripMenuItem
     Friend WithEvents mnuClear As ToolStripMenuItem
+    Friend WithEvents mnuExit As ToolStripMenuItem
 End Class
