@@ -22,17 +22,42 @@ Partial Class frmFitness
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.mnuFitness = New System.Windows.Forms.MenuStrip()
+        Me.mnuFile = New System.Windows.Forms.ToolStripMenuItem()
+        Me.mnuFitness.SuspendLayout()
         Me.SuspendLayout()
+        '
+        'mnuFitness
+        '
+        Me.mnuFitness.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuFile})
+        Me.mnuFitness.Location = New System.Drawing.Point(0, 0)
+        Me.mnuFitness.Name = "mnuFitness"
+        Me.mnuFitness.Size = New System.Drawing.Size(867, 24)
+        Me.mnuFitness.TabIndex = 0
+        Me.mnuFitness.Text = "MenuStrip1"
+        '
+        'mnuFile
+        '
+        Me.mnuFile.Name = "mnuFile"
+        Me.mnuFile.Size = New System.Drawing.Size(37, 20)
+        Me.mnuFile.Text = "&File"
         '
         'frmFitness
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(867, 438)
+        Me.Controls.Add(Me.mnuFitness)
+        Me.MainMenuStrip = Me.mnuFitness
         Me.Name = "frmFitness"
         Me.Text = "Fitness Challenge"
+        Me.mnuFitness.ResumeLayout(False)
+        Me.mnuFitness.PerformLayout()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
+    Friend WithEvents mnuFitness As MenuStrip
+    Friend WithEvents mnuFile As ToolStripMenuItem
 End Class
