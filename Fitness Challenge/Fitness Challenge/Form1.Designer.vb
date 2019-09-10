@@ -28,7 +28,7 @@ Partial Class frmFitness
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(867, 438)
         Me.Name = "frmFitness"
         Me.Text = "Fitness Challenge"
         Me.ResumeLayout(False)
