@@ -23,15 +23,24 @@ Partial Class frmSoftball
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.mnuScoreboard = New System.Windows.Forms.MenuStrip()
+        Me.mnuFile = New System.Windows.Forms.ToolStripMenuItem()
+        Me.mnuScoreboard.SuspendLayout()
         Me.SuspendLayout()
         '
         'mnuScoreboard
         '
+        Me.mnuScoreboard.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuFile})
         Me.mnuScoreboard.Location = New System.Drawing.Point(0, 0)
         Me.mnuScoreboard.Name = "mnuScoreboard"
         Me.mnuScoreboard.Size = New System.Drawing.Size(800, 24)
         Me.mnuScoreboard.TabIndex = 0
         Me.mnuScoreboard.Text = "MenuStrip1"
+        '
+        'mnuFile
+        '
+        Me.mnuFile.Name = "mnuFile"
+        Me.mnuFile.Size = New System.Drawing.Size(37, 20)
+        Me.mnuFile.Text = "&File"
         '
         'frmSoftball
         '
@@ -42,10 +51,13 @@ Partial Class frmSoftball
         Me.MainMenuStrip = Me.mnuScoreboard
         Me.Name = "frmSoftball"
         Me.Text = "Softball Scoreboard"
+        Me.mnuScoreboard.ResumeLayout(False)
+        Me.mnuScoreboard.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents mnuScoreboard As MenuStrip
+    Friend WithEvents mnuFile As ToolStripMenuItem
 End Class
