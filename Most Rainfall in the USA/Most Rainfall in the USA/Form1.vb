@@ -5,4 +5,7 @@
 
 Option Strict On
 Public Class frmRainfall
+    Private Sub BtnRainfall_Click(sender As Object, e As EventArgs) Handles btnRainfall.Click
+
+    End Sub
 End Class
