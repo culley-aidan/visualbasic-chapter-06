@@ -27,6 +27,7 @@ Partial Class frmRainfall
         Me.mnuClear = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnuExit = New System.Windows.Forms.ToolStripMenuItem()
         Me.lblTitle = New System.Windows.Forms.Label()
+        Me.lblAverage = New System.Windows.Forms.Label()
         Me.mnuRainfall.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -49,13 +50,13 @@ Partial Class frmRainfall
         'mnuClear
         '
         Me.mnuClear.Name = "mnuClear"
-        Me.mnuClear.Size = New System.Drawing.Size(180, 22)
+        Me.mnuClear.Size = New System.Drawing.Size(101, 22)
         Me.mnuClear.Text = "&Clear"
         '
         'mnuExit
         '
         Me.mnuExit.Name = "mnuExit"
-        Me.mnuExit.Size = New System.Drawing.Size(180, 22)
+        Me.mnuExit.Size = New System.Drawing.Size(101, 22)
         Me.mnuExit.Text = "E&xit"
         '
         'lblTitle
@@ -69,11 +70,23 @@ Partial Class frmRainfall
         Me.lblTitle.TabIndex = 1
         Me.lblTitle.Text = "Most Rainfall in US - Kauai"
         '
+        'lblAverage
+        '
+        Me.lblAverage.AutoSize = True
+        Me.lblAverage.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblAverage.ForeColor = System.Drawing.Color.SteelBlue
+        Me.lblAverage.Location = New System.Drawing.Point(110, 76)
+        Me.lblAverage.Name = "lblAverage"
+        Me.lblAverage.Size = New System.Drawing.Size(101, 16)
+        Me.lblAverage.TabIndex = 2
+        Me.lblAverage.Text = "Rainfall Average"
+        '
         'frmRainfall
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.lblAverage)
         Me.Controls.Add(Me.lblTitle)
         Me.Controls.Add(Me.mnuRainfall)
         Me.MainMenuStrip = Me.mnuRainfall
@@ -91,4 +104,5 @@ Partial Class frmRainfall
     Friend WithEvents mnuClear As ToolStripMenuItem
     Friend WithEvents mnuExit As ToolStripMenuItem
     Friend WithEvents lblTitle As Label
+    Friend WithEvents lblAverage As Label
 End Class
