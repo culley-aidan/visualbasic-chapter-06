@@ -30,7 +30,7 @@ Public Class frmFitness
         Dim strNegativeError As String = "Error - Enter a positive number for the weight loss of team member #"
 
         ' Declare and initialize loop variables 
-        Dim strcancelClicked As String = ""
+        Dim strCancelClicked As String = ""
         Dim intMaxNumberOfEntries As Integer = 8
         Dim intNumberOfEntries As Integer = 1
 
@@ -38,6 +38,23 @@ Public Class frmFitness
         ' The loop terminates when the user has entered 8 weight loss values or the user 
         ' clicks the cancel button or the close button in the inputbox
         strWeightLoss = InputBox(strInputMessage & intNumberOfEntries, strInputHeading, " ")
-
+        Do Until intNumberOfEntries > intMaxNumberOfEntries Or strWeightLoss = strCancelClicked
+            If IsNumeric(strWeightLoss) Then
+                decWeightLoss = Convert.ToDecimal(strWeightLoss)
+                If decWeightLoss > 0 Then
+                    lstWeightLoss.Items.Add(decWeightLoss)
+                    decTotalWeightLoss += decWeightLoss
+                    intNumberOfEntries += 1
+                    strInputMessage = strNormalMessage
+                Else
+                    strInputMessage = strNegativeError
+                End If
+            Else
+                strInputMessage = strNonNumericError
+            End If
+            If intNumberOfEntries <= intMaxNumberOfEntries Then
+                strWeightLoss = InputBox(strInputMessage & intNumberOfEntries, strInputHeading, " ")
+            End If
+        Loop
     End Sub
 End Class
