@@ -109,20 +109,22 @@ Partial Class frmRainfall
         '
         'lstRainfall
         '
-        Me.lstRainfall.Font = New System.Drawing.Font("Tahoma", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lstRainfall.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lstRainfall.ForeColor = System.Drawing.Color.Tomato
         Me.lstRainfall.FormattingEnabled = True
-        Me.lstRainfall.ItemHeight = 23
-        Me.lstRainfall.Location = New System.Drawing.Point(591, 27)
+        Me.lstRainfall.ItemHeight = 19
+        Me.lstRainfall.Location = New System.Drawing.Point(601, 34)
         Me.lstRainfall.Name = "lstRainfall"
         Me.lstRainfall.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.lstRainfall.Size = New System.Drawing.Size(61, 280)
+        Me.lstRainfall.Size = New System.Drawing.Size(61, 232)
         Me.lstRainfall.TabIndex = 5
         '
         'frmRainfall
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackgroundImage = Global.Most_Rainfall_in_the_USA.My.Resources.Resources.hawaii
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.lstRainfall)
         Me.Controls.Add(Me.lblTotalAverage)
