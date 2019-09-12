@@ -34,5 +34,10 @@ Public Class frmFitness
         Dim intMaxNumberOfEntries As Integer = 8
         Dim intNumberOfEntries As Integer = 1
 
+        ' This loop allows the user to enter the weight loss of up to 8 team members.
+        ' The loop terminates when the user has entered 8 weight loss values or the user 
+        ' clicks the cancel button or the close button in the inputbox
+        strWeightLoss = InputBox(strInputMessage & intNumberOfEntries, strInputHeading, " ")
+
     End Sub
 End Class
