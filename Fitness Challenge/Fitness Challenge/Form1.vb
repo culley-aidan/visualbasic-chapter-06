@@ -6,6 +6,7 @@
 '               weight loss value. After all weight loss values have been entered, 
 '               it displays the average weight loss for the team.
 
+Option Strict On
 Public Class frmFitness
     Private Sub BtnWeightLoss_Click(sender As Object, e As EventArgs) Handles btnWeightLoss.Click
 
