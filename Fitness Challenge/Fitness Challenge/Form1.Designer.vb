@@ -105,6 +105,7 @@ Partial Class frmFitness
         Me.lblAverageLoss.Size = New System.Drawing.Size(390, 29)
         Me.lblAverageLoss.TabIndex = 4
         Me.lblAverageLoss.Text = "Average weight loss is XX.X lbs."
+        Me.lblAverageLoss.Visible = False
         '
         'frmFitness
         '
