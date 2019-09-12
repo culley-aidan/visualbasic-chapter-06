@@ -23,15 +23,24 @@ Partial Class frmRainfall
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.mnuRainfall = New System.Windows.Forms.MenuStrip()
+        Me.mnuFile = New System.Windows.Forms.ToolStripMenuItem()
+        Me.mnuRainfall.SuspendLayout()
         Me.SuspendLayout()
         '
         'mnuRainfall
         '
+        Me.mnuRainfall.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuFile})
         Me.mnuRainfall.Location = New System.Drawing.Point(0, 0)
         Me.mnuRainfall.Name = "mnuRainfall"
         Me.mnuRainfall.Size = New System.Drawing.Size(800, 24)
         Me.mnuRainfall.TabIndex = 0
         Me.mnuRainfall.Text = "MenuStrip1"
+        '
+        'mnuFile
+        '
+        Me.mnuFile.Name = "mnuFile"
+        Me.mnuFile.Size = New System.Drawing.Size(37, 20)
+        Me.mnuFile.Text = "&File"
         '
         'frmRainfall
         '
@@ -42,10 +51,13 @@ Partial Class frmRainfall
         Me.MainMenuStrip = Me.mnuRainfall
         Me.Name = "frmRainfall"
         Me.Text = "Most Rainfall in the USA"
+        Me.mnuRainfall.ResumeLayout(False)
+        Me.mnuRainfall.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents mnuRainfall As MenuStrip
+    Friend WithEvents mnuFile As ToolStripMenuItem
 End Class
