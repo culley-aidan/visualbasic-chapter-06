@@ -29,6 +29,7 @@ Partial Class frmFitness
         Me.lblTitle = New System.Windows.Forms.Label()
         Me.btnWeightLoss = New System.Windows.Forms.Button()
         Me.lstWeightLoss = New System.Windows.Forms.ListBox()
+        Me.lblAverageLoss = New System.Windows.Forms.Label()
         Me.mnuFitness.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -93,11 +94,23 @@ Partial Class frmFitness
         Me.lstWeightLoss.Size = New System.Drawing.Size(50, 188)
         Me.lstWeightLoss.TabIndex = 3
         '
+        'lblAverageLoss
+        '
+        Me.lblAverageLoss.AutoSize = True
+        Me.lblAverageLoss.BackColor = System.Drawing.Color.YellowGreen
+        Me.lblAverageLoss.Font = New System.Drawing.Font("Tahoma", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblAverageLoss.Location = New System.Drawing.Point(465, 364)
+        Me.lblAverageLoss.Name = "lblAverageLoss"
+        Me.lblAverageLoss.Size = New System.Drawing.Size(390, 29)
+        Me.lblAverageLoss.TabIndex = 4
+        Me.lblAverageLoss.Text = "Average weight loss is XX.X lbs."
+        '
         'frmFitness
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(867, 438)
+        Me.Controls.Add(Me.lblAverageLoss)
         Me.Controls.Add(Me.lstWeightLoss)
         Me.Controls.Add(Me.btnWeightLoss)
         Me.Controls.Add(Me.lblTitle)
@@ -119,4 +132,5 @@ Partial Class frmFitness
     Friend WithEvents lblTitle As Label
     Friend WithEvents btnWeightLoss As Button
     Friend WithEvents lstWeightLoss As ListBox
+    Friend WithEvents lblAverageLoss As Label
 End Class
