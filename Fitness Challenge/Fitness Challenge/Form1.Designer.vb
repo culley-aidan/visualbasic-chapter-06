@@ -109,6 +109,7 @@ Partial Class frmFitness
         '
         'frmFitness
         '
+        Me.AcceptButton = Me.btnWeightLoss
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Fitness_Challenge.My.Resources.Resources.health
