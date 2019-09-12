@@ -52,4 +52,14 @@ Public Class frmRainfall
         End If
         btnRainfall.Enabled = False
     End Sub
+
+    Private Sub MnuClear_Click(sender As Object, e As EventArgs) Handles mnuClear.Click
+        lstRainfall.Items.Clear()
+        lblTotalAverage.Visible = False
+        btnRainfall.Enabled = True
+    End Sub
+
+    Private Sub MnuExit_Click(sender As Object, e As EventArgs) Handles mnuExit.Click
+
+    End Sub
 End Class
