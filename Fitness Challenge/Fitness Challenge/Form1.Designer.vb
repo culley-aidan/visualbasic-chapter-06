@@ -64,6 +64,7 @@ Partial Class frmFitness
         'lblTitle
         '
         Me.lblTitle.AutoSize = True
+        Me.lblTitle.BackColor = System.Drawing.Color.Transparent
         Me.lblTitle.Font = New System.Drawing.Font("Tahoma", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblTitle.Location = New System.Drawing.Point(506, 24)
         Me.lblTitle.Name = "lblTitle"
@@ -109,6 +110,8 @@ Partial Class frmFitness
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackgroundImage = Global.Fitness_Challenge.My.Resources.Resources.health
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(867, 438)
         Me.Controls.Add(Me.lblAverageLoss)
         Me.Controls.Add(Me.lstWeightLoss)
