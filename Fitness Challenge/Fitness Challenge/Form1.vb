@@ -80,6 +80,8 @@ Public Class frmFitness
     End Sub
 
     Private Sub MnuExit_Click(sender As Object, e As EventArgs) Handles mnuExit.Click
+        ' The mnuExit click event closes the window and exits the application
 
+        Close()
     End Sub
 End Class
