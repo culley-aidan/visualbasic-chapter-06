@@ -22,17 +22,30 @@ Partial Class frmSoftball
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.mnuScoreboard = New System.Windows.Forms.MenuStrip()
         Me.SuspendLayout()
+        '
+        'mnuScoreboard
+        '
+        Me.mnuScoreboard.Location = New System.Drawing.Point(0, 0)
+        Me.mnuScoreboard.Name = "mnuScoreboard"
+        Me.mnuScoreboard.Size = New System.Drawing.Size(800, 24)
+        Me.mnuScoreboard.TabIndex = 0
+        Me.mnuScoreboard.Text = "MenuStrip1"
         '
         'frmSoftball
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.mnuScoreboard)
+        Me.MainMenuStrip = Me.mnuScoreboard
         Me.Name = "frmSoftball"
         Me.Text = "Softball Scoreboard"
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
+    Friend WithEvents mnuScoreboard As MenuStrip
 End Class
