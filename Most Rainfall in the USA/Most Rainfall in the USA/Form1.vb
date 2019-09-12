@@ -60,6 +60,6 @@ Public Class frmRainfall
     End Sub
 
     Private Sub MnuExit_Click(sender As Object, e As EventArgs) Handles mnuExit.Click
-
+        Close()
     End Sub
 End Class
