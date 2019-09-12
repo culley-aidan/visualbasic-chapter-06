@@ -27,6 +27,7 @@ Partial Class frmFitness
         Me.mnuClear = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnuExit = New System.Windows.Forms.ToolStripMenuItem()
         Me.lblTitle = New System.Windows.Forms.Label()
+        Me.btnWeightLoss = New System.Windows.Forms.Button()
         Me.mnuFitness.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -69,11 +70,23 @@ Partial Class frmFitness
         Me.lblTitle.Text = "Fitness Challenge" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Team Weight Loss "
         Me.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'btnWeightLoss
+        '
+        Me.btnWeightLoss.BackColor = System.Drawing.Color.YellowGreen
+        Me.btnWeightLoss.Font = New System.Drawing.Font("Tahoma", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnWeightLoss.Location = New System.Drawing.Point(569, 111)
+        Me.btnWeightLoss.Name = "btnWeightLoss"
+        Me.btnWeightLoss.Size = New System.Drawing.Size(215, 37)
+        Me.btnWeightLoss.TabIndex = 2
+        Me.btnWeightLoss.Text = "Enter Weight Loss"
+        Me.btnWeightLoss.UseVisualStyleBackColor = False
+        '
         'frmFitness
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(867, 438)
+        Me.Controls.Add(Me.btnWeightLoss)
         Me.Controls.Add(Me.lblTitle)
         Me.Controls.Add(Me.mnuFitness)
         Me.MainMenuStrip = Me.mnuFitness
@@ -91,4 +104,5 @@ Partial Class frmFitness
     Friend WithEvents mnuClear As ToolStripMenuItem
     Friend WithEvents mnuExit As ToolStripMenuItem
     Friend WithEvents lblTitle As Label
+    Friend WithEvents btnWeightLoss As Button
 End Class
