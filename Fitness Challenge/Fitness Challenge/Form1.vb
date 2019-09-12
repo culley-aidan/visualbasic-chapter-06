@@ -56,5 +56,17 @@ Public Class frmFitness
                 strWeightLoss = InputBox(strInputMessage & intNumberOfEntries, strInputHeading, " ")
             End If
         Loop
+
+        'Calculates and displays average team weight loss
+        If intNumberOfEntries > 1 Then
+            lblAverageLoss.Visible = True
+            decAverageLoss = decTotalWeightLoss / (intNumberOfEntries - 1)
+            lblAverageLoss.Text = "Average weight loss is " & decAverageLoss.ToString("F1") & " lbs"
+        Else
+            MsgBox("No weight loss value entered")
+        End If
+
+        ' Disalbes the weight loss button
+        btnWeightLoss.Enabled = False
     End Sub
 End Class
