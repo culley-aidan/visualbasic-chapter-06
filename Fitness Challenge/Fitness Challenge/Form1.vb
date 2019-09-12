@@ -29,6 +29,10 @@ Public Class frmFitness
         Dim strNonNumericError As String = "Error - Enter a number for the weight loss of team member #"
         Dim strNegativeError As String = "Error - Enter a positive number for the weight loss of team member #"
 
+        ' Declare and initialize loop variables 
+        Dim strcancelClicked As String = ""
+        Dim intMaxNumberOfEntries As Integer = 8
+        Dim intNumberOfEntries As Integer = 1
 
     End Sub
 End Class
