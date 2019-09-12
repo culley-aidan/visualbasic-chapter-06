@@ -26,6 +26,7 @@ Partial Class frmFitness
         Me.mnuFile = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnuClear = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnuExit = New System.Windows.Forms.ToolStripMenuItem()
+        Me.lblTitle = New System.Windows.Forms.Label()
         Me.mnuFitness.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -48,20 +49,32 @@ Partial Class frmFitness
         'mnuClear
         '
         Me.mnuClear.Name = "mnuClear"
-        Me.mnuClear.Size = New System.Drawing.Size(180, 22)
+        Me.mnuClear.Size = New System.Drawing.Size(101, 22)
         Me.mnuClear.Text = "&Clear"
         '
         'mnuExit
         '
         Me.mnuExit.Name = "mnuExit"
-        Me.mnuExit.Size = New System.Drawing.Size(180, 22)
+        Me.mnuExit.Size = New System.Drawing.Size(101, 22)
         Me.mnuExit.Text = "E&xit"
+        '
+        'lblTitle
+        '
+        Me.lblTitle.AutoSize = True
+        Me.lblTitle.Font = New System.Drawing.Font("Tahoma", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTitle.Location = New System.Drawing.Point(506, 24)
+        Me.lblTitle.Name = "lblTitle"
+        Me.lblTitle.Size = New System.Drawing.Size(349, 84)
+        Me.lblTitle.TabIndex = 1
+        Me.lblTitle.Text = "Fitness Challenge" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Team Weight Loss "
+        Me.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'frmFitness
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(867, 438)
+        Me.Controls.Add(Me.lblTitle)
         Me.Controls.Add(Me.mnuFitness)
         Me.MainMenuStrip = Me.mnuFitness
         Me.Name = "frmFitness"
@@ -77,4 +90,5 @@ Partial Class frmFitness
     Friend WithEvents mnuFile As ToolStripMenuItem
     Friend WithEvents mnuClear As ToolStripMenuItem
     Friend WithEvents mnuExit As ToolStripMenuItem
+    Friend WithEvents lblTitle As Label
 End Class
