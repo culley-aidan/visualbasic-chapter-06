@@ -28,6 +28,7 @@ Partial Class frmSoftball
         Me.mnuExit = New System.Windows.Forms.ToolStripMenuItem()
         Me.lblTitle = New System.Windows.Forms.Label()
         Me.lblFinalScore = New System.Windows.Forms.Label()
+        Me.btnInnings = New System.Windows.Forms.Button()
         Me.mnuScoreboard.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -79,11 +80,22 @@ Partial Class frmSoftball
         Me.lblFinalScore.TabIndex = 2
         Me.lblFinalScore.Text = "The final score is XX.X"
         '
+        'btnInnings
+        '
+        Me.btnInnings.Font = New System.Drawing.Font("Tahoma", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnInnings.Location = New System.Drawing.Point(97, 93)
+        Me.btnInnings.Name = "btnInnings"
+        Me.btnInnings.Size = New System.Drawing.Size(167, 38)
+        Me.btnInnings.TabIndex = 3
+        Me.btnInnings.Text = "Enter Innings"
+        Me.btnInnings.UseVisualStyleBackColor = True
+        '
         'frmSoftball
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.btnInnings)
         Me.Controls.Add(Me.lblFinalScore)
         Me.Controls.Add(Me.lblTitle)
         Me.Controls.Add(Me.mnuScoreboard)
@@ -103,4 +115,5 @@ Partial Class frmSoftball
     Friend WithEvents mnuExit As ToolStripMenuItem
     Friend WithEvents lblTitle As Label
     Friend WithEvents lblFinalScore As Label
+    Friend WithEvents btnInnings As Button
 End Class
