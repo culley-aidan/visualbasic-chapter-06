@@ -28,6 +28,7 @@ Partial Class frmFitness
         Me.mnuExit = New System.Windows.Forms.ToolStripMenuItem()
         Me.lblTitle = New System.Windows.Forms.Label()
         Me.btnWeightLoss = New System.Windows.Forms.Button()
+        Me.lstWeightLoss = New System.Windows.Forms.ListBox()
         Me.mnuFitness.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -81,11 +82,23 @@ Partial Class frmFitness
         Me.btnWeightLoss.Text = "Enter Weight Loss"
         Me.btnWeightLoss.UseVisualStyleBackColor = False
         '
+        'lstWeightLoss
+        '
+        Me.lstWeightLoss.Font = New System.Drawing.Font("Tahoma", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lstWeightLoss.FormattingEnabled = True
+        Me.lstWeightLoss.ItemHeight = 23
+        Me.lstWeightLoss.Location = New System.Drawing.Point(653, 154)
+        Me.lstWeightLoss.Name = "lstWeightLoss"
+        Me.lstWeightLoss.RightToLeft = System.Windows.Forms.RightToLeft.Yes
+        Me.lstWeightLoss.Size = New System.Drawing.Size(50, 188)
+        Me.lstWeightLoss.TabIndex = 3
+        '
         'frmFitness
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(867, 438)
+        Me.Controls.Add(Me.lstWeightLoss)
         Me.Controls.Add(Me.btnWeightLoss)
         Me.Controls.Add(Me.lblTitle)
         Me.Controls.Add(Me.mnuFitness)
@@ -105,4 +118,5 @@ Partial Class frmFitness
     Friend WithEvents mnuExit As ToolStripMenuItem
     Friend WithEvents lblTitle As Label
     Friend WithEvents btnWeightLoss As Button
+    Friend WithEvents lstWeightLoss As ListBox
 End Class
