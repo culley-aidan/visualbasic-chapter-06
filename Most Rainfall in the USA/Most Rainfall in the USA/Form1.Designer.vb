@@ -29,6 +29,7 @@ Partial Class frmRainfall
         Me.lblTitle = New System.Windows.Forms.Label()
         Me.lblAverage = New System.Windows.Forms.Label()
         Me.btnRainfall = New System.Windows.Forms.Button()
+        Me.lblTotalAverage = New System.Windows.Forms.Label()
         Me.mnuRainfall.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -93,11 +94,24 @@ Partial Class frmRainfall
         Me.btnRainfall.Text = "Enter rainfall"
         Me.btnRainfall.UseVisualStyleBackColor = False
         '
+        'lblTotalAverage
+        '
+        Me.lblTotalAverage.AutoSize = True
+        Me.lblTotalAverage.BackColor = System.Drawing.SystemColors.Control
+        Me.lblTotalAverage.Font = New System.Drawing.Font("Tahoma", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTotalAverage.ForeColor = System.Drawing.Color.Tomato
+        Me.lblTotalAverage.Location = New System.Drawing.Point(26, 217)
+        Me.lblTotalAverage.Name = "lblTotalAverage"
+        Me.lblTotalAverage.Size = New System.Drawing.Size(410, 23)
+        Me.lblTotalAverage.TabIndex = 4
+        Me.lblTotalAverage.Text = "Average Rainfall per Month is XX.X inches"
+        '
         'frmRainfall
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.lblTotalAverage)
         Me.Controls.Add(Me.btnRainfall)
         Me.Controls.Add(Me.lblAverage)
         Me.Controls.Add(Me.lblTitle)
@@ -119,4 +133,5 @@ Partial Class frmRainfall
     Friend WithEvents lblTitle As Label
     Friend WithEvents lblAverage As Label
     Friend WithEvents btnRainfall As Button
+    Friend WithEvents lblTotalAverage As Label
 End Class
