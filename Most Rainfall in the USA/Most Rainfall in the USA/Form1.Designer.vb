@@ -28,6 +28,7 @@ Partial Class frmRainfall
         Me.mnuExit = New System.Windows.Forms.ToolStripMenuItem()
         Me.lblTitle = New System.Windows.Forms.Label()
         Me.lblAverage = New System.Windows.Forms.Label()
+        Me.btnRainfall = New System.Windows.Forms.Button()
         Me.mnuRainfall.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -81,11 +82,23 @@ Partial Class frmRainfall
         Me.lblAverage.TabIndex = 2
         Me.lblAverage.Text = "Rainfall Average"
         '
+        'btnRainfall
+        '
+        Me.btnRainfall.BackColor = System.Drawing.Color.CornflowerBlue
+        Me.btnRainfall.Font = New System.Drawing.Font("Tahoma", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnRainfall.Location = New System.Drawing.Point(78, 118)
+        Me.btnRainfall.Name = "btnRainfall"
+        Me.btnRainfall.Size = New System.Drawing.Size(167, 33)
+        Me.btnRainfall.TabIndex = 3
+        Me.btnRainfall.Text = "Enter rainfall"
+        Me.btnRainfall.UseVisualStyleBackColor = False
+        '
         'frmRainfall
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.btnRainfall)
         Me.Controls.Add(Me.lblAverage)
         Me.Controls.Add(Me.lblTitle)
         Me.Controls.Add(Me.mnuRainfall)
@@ -105,4 +118,5 @@ Partial Class frmRainfall
     Friend WithEvents mnuExit As ToolStripMenuItem
     Friend WithEvents lblTitle As Label
     Friend WithEvents lblAverage As Label
+    Friend WithEvents btnRainfall As Button
 End Class
