@@ -26,6 +26,7 @@ Partial Class frmRainfall
         Me.mnuFile = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnuClear = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnuExit = New System.Windows.Forms.ToolStripMenuItem()
+        Me.lblTitle = New System.Windows.Forms.Label()
         Me.mnuRainfall.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -57,11 +58,23 @@ Partial Class frmRainfall
         Me.mnuExit.Size = New System.Drawing.Size(180, 22)
         Me.mnuExit.Text = "E&xit"
         '
+        'lblTitle
+        '
+        Me.lblTitle.AutoSize = True
+        Me.lblTitle.Font = New System.Drawing.Font("Tahoma", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTitle.ForeColor = System.Drawing.Color.Tomato
+        Me.lblTitle.Location = New System.Drawing.Point(12, 34)
+        Me.lblTitle.Name = "lblTitle"
+        Me.lblTitle.Size = New System.Drawing.Size(328, 29)
+        Me.lblTitle.TabIndex = 1
+        Me.lblTitle.Text = "Most Rainfall in US - Kauai"
+        '
         'frmRainfall
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.lblTitle)
         Me.Controls.Add(Me.mnuRainfall)
         Me.MainMenuStrip = Me.mnuRainfall
         Me.Name = "frmRainfall"
@@ -77,4 +90,5 @@ Partial Class frmRainfall
     Friend WithEvents mnuFile As ToolStripMenuItem
     Friend WithEvents mnuClear As ToolStripMenuItem
     Friend WithEvents mnuExit As ToolStripMenuItem
+    Friend WithEvents lblTitle As Label
 End Class
