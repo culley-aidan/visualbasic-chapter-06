@@ -25,6 +25,7 @@ Partial Class frmRainfall
         Me.mnuRainfall = New System.Windows.Forms.MenuStrip()
         Me.mnuFile = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnuClear = New System.Windows.Forms.ToolStripMenuItem()
+        Me.mnuExit = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnuRainfall.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -39,7 +40,7 @@ Partial Class frmRainfall
         '
         'mnuFile
         '
-        Me.mnuFile.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuClear})
+        Me.mnuFile.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuClear, Me.mnuExit})
         Me.mnuFile.Name = "mnuFile"
         Me.mnuFile.Size = New System.Drawing.Size(37, 20)
         Me.mnuFile.Text = "&File"
@@ -49,6 +50,12 @@ Partial Class frmRainfall
         Me.mnuClear.Name = "mnuClear"
         Me.mnuClear.Size = New System.Drawing.Size(180, 22)
         Me.mnuClear.Text = "&Clear"
+        '
+        'mnuExit
+        '
+        Me.mnuExit.Name = "mnuExit"
+        Me.mnuExit.Size = New System.Drawing.Size(180, 22)
+        Me.mnuExit.Text = "E&xit"
         '
         'frmRainfall
         '
@@ -69,4 +76,5 @@ Partial Class frmRainfall
     Friend WithEvents mnuRainfall As MenuStrip
     Friend WithEvents mnuFile As ToolStripMenuItem
     Friend WithEvents mnuClear As ToolStripMenuItem
+    Friend WithEvents mnuExit As ToolStripMenuItem
 End Class
