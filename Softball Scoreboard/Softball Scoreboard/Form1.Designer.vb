@@ -27,6 +27,7 @@ Partial Class frmSoftball
         Me.mnuClear = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnuExit = New System.Windows.Forms.ToolStripMenuItem()
         Me.lblTitle = New System.Windows.Forms.Label()
+        Me.lblFinalScore = New System.Windows.Forms.Label()
         Me.mnuScoreboard.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -68,11 +69,22 @@ Partial Class frmSoftball
         Me.lblTitle.TabIndex = 1
         Me.lblTitle.Text = "Softball Scoreboard"
         '
+        'lblFinalScore
+        '
+        Me.lblFinalScore.AutoSize = True
+        Me.lblFinalScore.Font = New System.Drawing.Font("Tahoma", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblFinalScore.Location = New System.Drawing.Point(14, 362)
+        Me.lblFinalScore.Name = "lblFinalScore"
+        Me.lblFinalScore.Size = New System.Drawing.Size(276, 29)
+        Me.lblFinalScore.TabIndex = 2
+        Me.lblFinalScore.Text = "The final score is XX.X"
+        '
         'frmSoftball
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.lblFinalScore)
         Me.Controls.Add(Me.lblTitle)
         Me.Controls.Add(Me.mnuScoreboard)
         Me.MainMenuStrip = Me.mnuScoreboard
@@ -90,4 +102,5 @@ Partial Class frmSoftball
     Friend WithEvents mnuClear As ToolStripMenuItem
     Friend WithEvents mnuExit As ToolStripMenuItem
     Friend WithEvents lblTitle As Label
+    Friend WithEvents lblFinalScore As Label
 End Class
