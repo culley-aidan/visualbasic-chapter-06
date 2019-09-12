@@ -22,17 +22,30 @@ Partial Class frmRainfall
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.mnuRainfall = New System.Windows.Forms.MenuStrip()
         Me.SuspendLayout()
+        '
+        'mnuRainfall
+        '
+        Me.mnuRainfall.Location = New System.Drawing.Point(0, 0)
+        Me.mnuRainfall.Name = "mnuRainfall"
+        Me.mnuRainfall.Size = New System.Drawing.Size(800, 24)
+        Me.mnuRainfall.TabIndex = 0
+        Me.mnuRainfall.Text = "MenuStrip1"
         '
         'frmRainfall
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.mnuRainfall)
+        Me.MainMenuStrip = Me.mnuRainfall
         Me.Name = "frmRainfall"
         Me.Text = "Most Rainfall in the USA"
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
+    Friend WithEvents mnuRainfall As MenuStrip
 End Class
