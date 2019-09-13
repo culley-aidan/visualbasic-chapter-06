@@ -25,6 +25,8 @@ Partial Class frmFactorial
         Me.lblTitle = New System.Windows.Forms.Label()
         Me.btnCalculate = New System.Windows.Forms.Button()
         Me.mnuCalculator = New System.Windows.Forms.MenuStrip()
+        Me.mnuFile = New System.Windows.Forms.ToolStripMenuItem()
+        Me.mnuCalculator.SuspendLayout()
         Me.SuspendLayout()
         '
         'lblTitle
@@ -49,11 +51,18 @@ Partial Class frmFactorial
         '
         'mnuCalculator
         '
+        Me.mnuCalculator.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuFile})
         Me.mnuCalculator.Location = New System.Drawing.Point(0, 0)
         Me.mnuCalculator.Name = "mnuCalculator"
         Me.mnuCalculator.Size = New System.Drawing.Size(800, 24)
         Me.mnuCalculator.TabIndex = 2
         Me.mnuCalculator.Text = "mnuCalculator"
+        '
+        'mnuFile
+        '
+        Me.mnuFile.Name = "mnuFile"
+        Me.mnuFile.Size = New System.Drawing.Size(37, 20)
+        Me.mnuFile.Text = "&File"
         '
         'frmFactorial
         '
@@ -66,6 +75,8 @@ Partial Class frmFactorial
         Me.MainMenuStrip = Me.mnuCalculator
         Me.Name = "frmFactorial"
         Me.Text = "Factorial Calculator"
+        Me.mnuCalculator.ResumeLayout(False)
+        Me.mnuCalculator.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -74,4 +85,5 @@ Partial Class frmFactorial
     Friend WithEvents lblTitle As Label
     Friend WithEvents btnCalculate As Button
     Friend WithEvents mnuCalculator As MenuStrip
+    Friend WithEvents mnuFile As ToolStripMenuItem
 End Class
