@@ -24,13 +24,14 @@ Partial Class frmFactorial
     Private Sub InitializeComponent()
         Me.lblTitle = New System.Windows.Forms.Label()
         Me.btnCalculate = New System.Windows.Forms.Button()
+        Me.mnuCalculator = New System.Windows.Forms.MenuStrip()
         Me.SuspendLayout()
         '
         'lblTitle
         '
         Me.lblTitle.AutoSize = True
         Me.lblTitle.Font = New System.Drawing.Font("Tahoma", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTitle.Location = New System.Drawing.Point(188, 9)
+        Me.lblTitle.Location = New System.Drawing.Point(208, 24)
         Me.lblTitle.Name = "lblTitle"
         Me.lblTitle.Size = New System.Drawing.Size(361, 42)
         Me.lblTitle.TabIndex = 0
@@ -39,12 +40,20 @@ Partial Class frmFactorial
         'btnCalculate
         '
         Me.btnCalculate.Font = New System.Drawing.Font("Tahoma", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCalculate.Location = New System.Drawing.Point(241, 54)
+        Me.btnCalculate.Location = New System.Drawing.Point(257, 69)
         Me.btnCalculate.Name = "btnCalculate"
         Me.btnCalculate.Size = New System.Drawing.Size(249, 47)
         Me.btnCalculate.TabIndex = 1
         Me.btnCalculate.Text = "Calculate Factorials"
         Me.btnCalculate.UseVisualStyleBackColor = True
+        '
+        'mnuCalculator
+        '
+        Me.mnuCalculator.Location = New System.Drawing.Point(0, 0)
+        Me.mnuCalculator.Name = "mnuCalculator"
+        Me.mnuCalculator.Size = New System.Drawing.Size(800, 24)
+        Me.mnuCalculator.TabIndex = 2
+        Me.mnuCalculator.Text = "mnuCalculator"
         '
         'frmFactorial
         '
@@ -53,6 +62,8 @@ Partial Class frmFactorial
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.btnCalculate)
         Me.Controls.Add(Me.lblTitle)
+        Me.Controls.Add(Me.mnuCalculator)
+        Me.MainMenuStrip = Me.mnuCalculator
         Me.Name = "frmFactorial"
         Me.Text = "Factorial Calculator"
         Me.ResumeLayout(False)
@@ -62,4 +73,5 @@ Partial Class frmFactorial
 
     Friend WithEvents lblTitle As Label
     Friend WithEvents btnCalculate As Button
+    Friend WithEvents mnuCalculator As MenuStrip
 End Class
