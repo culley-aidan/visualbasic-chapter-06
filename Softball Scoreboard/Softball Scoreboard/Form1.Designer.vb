@@ -29,6 +29,7 @@ Partial Class frmSoftball
         Me.lblTitle = New System.Windows.Forms.Label()
         Me.lblFinalScore = New System.Windows.Forms.Label()
         Me.btnInnings = New System.Windows.Forms.Button()
+        Me.lstInnings = New System.Windows.Forms.ListBox()
         Me.mnuScoreboard.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -90,11 +91,23 @@ Partial Class frmSoftball
         Me.btnInnings.Text = "Enter Innings"
         Me.btnInnings.UseVisualStyleBackColor = True
         '
+        'lstInnings
+        '
+        Me.lstInnings.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lstInnings.FormattingEnabled = True
+        Me.lstInnings.ItemHeight = 19
+        Me.lstInnings.Location = New System.Drawing.Point(110, 161)
+        Me.lstInnings.Name = "lstInnings"
+        Me.lstInnings.RightToLeft = System.Windows.Forms.RightToLeft.Yes
+        Me.lstInnings.Size = New System.Drawing.Size(120, 137)
+        Me.lstInnings.TabIndex = 4
+        '
         'frmSoftball
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.lstInnings)
         Me.Controls.Add(Me.btnInnings)
         Me.Controls.Add(Me.lblFinalScore)
         Me.Controls.Add(Me.lblTitle)
@@ -116,4 +129,5 @@ Partial Class frmSoftball
     Friend WithEvents lblTitle As Label
     Friend WithEvents lblFinalScore As Label
     Friend WithEvents btnInnings As Button
+    Friend WithEvents lstInnings As ListBox
 End Class
