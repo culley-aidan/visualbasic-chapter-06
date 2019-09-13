@@ -65,11 +65,11 @@ Partial Class frmSoftball
         '
         Me.lblTitle.AutoSize = True
         Me.lblTitle.Font = New System.Drawing.Font("Tahoma", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTitle.Location = New System.Drawing.Point(12, 34)
+        Me.lblTitle.Location = New System.Drawing.Point(0, 24)
         Me.lblTitle.Name = "lblTitle"
-        Me.lblTitle.Size = New System.Drawing.Size(365, 42)
+        Me.lblTitle.Size = New System.Drawing.Size(375, 42)
         Me.lblTitle.TabIndex = 1
-        Me.lblTitle.Text = "Softball Scoreboard"
+        Me.lblTitle.Text = " Softball Scoreboard"
         '
         'lblFinalScore
         '
@@ -97,7 +97,7 @@ Partial Class frmSoftball
         Me.lstInnings.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lstInnings.FormattingEnabled = True
         Me.lstInnings.ItemHeight = 19
-        Me.lstInnings.Location = New System.Drawing.Point(144, 142)
+        Me.lstInnings.Location = New System.Drawing.Point(150, 140)
         Me.lstInnings.Name = "lstInnings"
         Me.lstInnings.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.lstInnings.Size = New System.Drawing.Size(62, 137)
@@ -107,6 +107,8 @@ Partial Class frmSoftball
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackgroundImage = Global.Softball_Scoreboard.My.Resources.Resources.softball
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(375, 391)
         Me.Controls.Add(Me.lstInnings)
         Me.Controls.Add(Me.btnInnings)
