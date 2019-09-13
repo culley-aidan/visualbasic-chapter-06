@@ -28,6 +28,7 @@ Partial Class frmFactorial
         Me.mnuFile = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnuClear = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnuExit = New System.Windows.Forms.ToolStripMenuItem()
+        Me.lstFactorials = New System.Windows.Forms.ListBox()
         Me.mnuCalculator.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -79,11 +80,22 @@ Partial Class frmFactorial
         Me.mnuExit.Size = New System.Drawing.Size(180, 22)
         Me.mnuExit.Text = "E&xit"
         '
+        'lstFactorials
+        '
+        Me.lstFactorials.Font = New System.Drawing.Font("Tahoma", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lstFactorials.FormattingEnabled = True
+        Me.lstFactorials.ItemHeight = 23
+        Me.lstFactorials.Location = New System.Drawing.Point(215, 138)
+        Me.lstFactorials.Name = "lstFactorials"
+        Me.lstFactorials.Size = New System.Drawing.Size(354, 280)
+        Me.lstFactorials.TabIndex = 3
+        '
         'frmFactorial
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.lstFactorials)
         Me.Controls.Add(Me.btnCalculate)
         Me.Controls.Add(Me.lblTitle)
         Me.Controls.Add(Me.mnuCalculator)
@@ -103,4 +115,5 @@ Partial Class frmFactorial
     Friend WithEvents mnuFile As ToolStripMenuItem
     Friend WithEvents mnuClear As ToolStripMenuItem
     Friend WithEvents mnuExit As ToolStripMenuItem
+    Friend WithEvents lstFactorials As ListBox
 End Class
