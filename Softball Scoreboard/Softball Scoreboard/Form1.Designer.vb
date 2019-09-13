@@ -52,13 +52,13 @@ Partial Class frmSoftball
         'mnuClear
         '
         Me.mnuClear.Name = "mnuClear"
-        Me.mnuClear.Size = New System.Drawing.Size(101, 22)
+        Me.mnuClear.Size = New System.Drawing.Size(180, 22)
         Me.mnuClear.Text = "&Clear"
         '
         'mnuExit
         '
         Me.mnuExit.Name = "mnuExit"
-        Me.mnuExit.Size = New System.Drawing.Size(101, 22)
+        Me.mnuExit.Size = New System.Drawing.Size(180, 22)
         Me.mnuExit.Text = "E&xit"
         '
         'lblTitle
@@ -80,6 +80,7 @@ Partial Class frmSoftball
         Me.lblFinalScore.Size = New System.Drawing.Size(276, 29)
         Me.lblFinalScore.TabIndex = 2
         Me.lblFinalScore.Text = "The final score is XX.X"
+        Me.lblFinalScore.Visible = False
         '
         'btnInnings
         '
