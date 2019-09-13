@@ -54,4 +54,9 @@ Public Class frmFactorial
         End If
         btnCalculate.Enabled = False
     End Sub
+
+    Private Sub MnuClear_Click(sender As Object, e As EventArgs) Handles mnuClear.Click
+        lstFactorials.Items.Clear()
+        btnCalculate.Enabled = True
+    End Sub
 End Class
