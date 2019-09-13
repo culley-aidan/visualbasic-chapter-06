@@ -23,6 +23,7 @@ Partial Class frmFactorial
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.lblTitle = New System.Windows.Forms.Label()
+        Me.btnCalculate = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'lblTitle
@@ -35,11 +36,22 @@ Partial Class frmFactorial
         Me.lblTitle.TabIndex = 0
         Me.lblTitle.Text = "Factorial Calculator"
         '
+        'btnCalculate
+        '
+        Me.btnCalculate.Font = New System.Drawing.Font("Tahoma", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCalculate.Location = New System.Drawing.Point(241, 54)
+        Me.btnCalculate.Name = "btnCalculate"
+        Me.btnCalculate.Size = New System.Drawing.Size(249, 47)
+        Me.btnCalculate.TabIndex = 1
+        Me.btnCalculate.Text = "Calculate Factorials"
+        Me.btnCalculate.UseVisualStyleBackColor = True
+        '
         'frmFactorial
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.btnCalculate)
         Me.Controls.Add(Me.lblTitle)
         Me.Name = "frmFactorial"
         Me.Text = "Factorial Calculator"
@@ -49,4 +61,5 @@ Partial Class frmFactorial
     End Sub
 
     Friend WithEvents lblTitle As Label
+    Friend WithEvents btnCalculate As Button
 End Class
