@@ -26,6 +26,7 @@ Partial Class frmFactorial
         Me.btnCalculate = New System.Windows.Forms.Button()
         Me.mnuCalculator = New System.Windows.Forms.MenuStrip()
         Me.mnuFile = New System.Windows.Forms.ToolStripMenuItem()
+        Me.mnuClear = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnuCalculator.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -60,9 +61,16 @@ Partial Class frmFactorial
         '
         'mnuFile
         '
+        Me.mnuFile.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuClear})
         Me.mnuFile.Name = "mnuFile"
         Me.mnuFile.Size = New System.Drawing.Size(37, 20)
         Me.mnuFile.Text = "&File"
+        '
+        'mnuClear
+        '
+        Me.mnuClear.Name = "mnuClear"
+        Me.mnuClear.Size = New System.Drawing.Size(180, 22)
+        Me.mnuClear.Text = "&Clear"
         '
         'frmFactorial
         '
@@ -86,4 +94,5 @@ Partial Class frmFactorial
     Friend WithEvents btnCalculate As Button
     Friend WithEvents mnuCalculator As MenuStrip
     Friend WithEvents mnuFile As ToolStripMenuItem
+    Friend WithEvents mnuClear As ToolStripMenuItem
 End Class
