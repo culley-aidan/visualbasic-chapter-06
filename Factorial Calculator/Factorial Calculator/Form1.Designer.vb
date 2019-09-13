@@ -35,8 +35,10 @@ Partial Class frmFactorial
         'lblTitle
         '
         Me.lblTitle.AutoSize = True
+        Me.lblTitle.BackColor = System.Drawing.Color.Transparent
         Me.lblTitle.Font = New System.Drawing.Font("Tahoma", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTitle.Location = New System.Drawing.Point(208, 24)
+        Me.lblTitle.ForeColor = System.Drawing.Color.Chartreuse
+        Me.lblTitle.Location = New System.Drawing.Point(53, 24)
         Me.lblTitle.Name = "lblTitle"
         Me.lblTitle.Size = New System.Drawing.Size(361, 42)
         Me.lblTitle.TabIndex = 0
@@ -44,20 +46,22 @@ Partial Class frmFactorial
         '
         'btnCalculate
         '
+        Me.btnCalculate.BackColor = System.Drawing.Color.Black
         Me.btnCalculate.Font = New System.Drawing.Font("Tahoma", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCalculate.Location = New System.Drawing.Point(257, 69)
+        Me.btnCalculate.ForeColor = System.Drawing.Color.Chartreuse
+        Me.btnCalculate.Location = New System.Drawing.Point(104, 81)
         Me.btnCalculate.Name = "btnCalculate"
         Me.btnCalculate.Size = New System.Drawing.Size(249, 47)
         Me.btnCalculate.TabIndex = 1
         Me.btnCalculate.Text = "Calculate Factorials"
-        Me.btnCalculate.UseVisualStyleBackColor = True
+        Me.btnCalculate.UseVisualStyleBackColor = False
         '
         'mnuCalculator
         '
         Me.mnuCalculator.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuFile})
         Me.mnuCalculator.Location = New System.Drawing.Point(0, 0)
         Me.mnuCalculator.Name = "mnuCalculator"
-        Me.mnuCalculator.Size = New System.Drawing.Size(800, 24)
+        Me.mnuCalculator.Size = New System.Drawing.Size(462, 24)
         Me.mnuCalculator.TabIndex = 2
         Me.mnuCalculator.Text = "mnuCalculator"
         '
@@ -71,21 +75,23 @@ Partial Class frmFactorial
         'mnuClear
         '
         Me.mnuClear.Name = "mnuClear"
-        Me.mnuClear.Size = New System.Drawing.Size(180, 22)
+        Me.mnuClear.Size = New System.Drawing.Size(101, 22)
         Me.mnuClear.Text = "&Clear"
         '
         'mnuExit
         '
         Me.mnuExit.Name = "mnuExit"
-        Me.mnuExit.Size = New System.Drawing.Size(180, 22)
+        Me.mnuExit.Size = New System.Drawing.Size(101, 22)
         Me.mnuExit.Text = "E&xit"
         '
         'lstFactorials
         '
+        Me.lstFactorials.BackColor = System.Drawing.Color.Black
         Me.lstFactorials.Font = New System.Drawing.Font("Tahoma", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lstFactorials.ForeColor = System.Drawing.Color.Chartreuse
         Me.lstFactorials.FormattingEnabled = True
         Me.lstFactorials.ItemHeight = 23
-        Me.lstFactorials.Location = New System.Drawing.Point(215, 138)
+        Me.lstFactorials.Location = New System.Drawing.Point(60, 158)
         Me.lstFactorials.Name = "lstFactorials"
         Me.lstFactorials.Size = New System.Drawing.Size(354, 280)
         Me.lstFactorials.TabIndex = 3
@@ -94,7 +100,8 @@ Partial Class frmFactorial
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.BackgroundImage = Global.Factorial_Calculator.My.Resources.Resources.matrix_full_3145364_960_720
+        Me.ClientSize = New System.Drawing.Size(462, 450)
         Me.Controls.Add(Me.lstFactorials)
         Me.Controls.Add(Me.btnCalculate)
         Me.Controls.Add(Me.lblTitle)

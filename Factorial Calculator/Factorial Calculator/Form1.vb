@@ -15,7 +15,7 @@ Public Class frmFactorial
         Dim strInputHeading As String = "Factorials"
         Dim strNormalMessage As String = "Enter the factorials you want (1-12)"
 
-        Dim strNonNumericError As String = "Error - Enter a valid number between #-12"
+        Dim strNonNumericError As String = "Error - Enter a valid number between (1-12)"
         Dim strNegativeError As String = "Error - Enter a postive value"
         Dim strHighNumberError As String = "Error - Enter a number <= 12"
 
@@ -29,7 +29,7 @@ Public Class frmFactorial
             If IsNumeric(strFactorialMax) Then
                 decFactorialMax = Convert.ToDecimal(strFactorialMax)
                 intRequestedEntries = decFactorialMax
-                If decFactorialMax > 0 And decFactorialMax <= 12 Then
+                If decFactorialMax >= 1 And decFactorialMax <= 12 Then
                     decFactorial = intNumberOfEntries
                     For i = 2 To intNumberOfEntries - 1
                         decFactorial = decFactorial * i
@@ -37,10 +37,10 @@ Public Class frmFactorial
                     lstFactorials.Items.Add(intNumberOfEntries & "!" & "=" & decFactorial)
                     intNumberOfEntries += 1
                     strInputMessage = strNormalMessage
-                ElseIf decFactorialMax > intMaxNumberOfEntries Then
+                ElseIf intRequestedEntries > (intMaxNumberOfEntries - 1) Then
                     strInputMessage = strHighNumberError
                     strFactorialMax = InputBox(strInputMessage, strInputHeading, " ")
-                Else
+                ElseIf intRequestedEntries = 0 Or intRequestedEntries < 0 Then
                     strInputMessage = strNegativeError
                     strFactorialMax = InputBox(strInputMessage, strInputHeading, " ")
                 End If
