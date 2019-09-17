@@ -5,4 +5,4 @@ Visual Basic Programming 1, Chapter 6
 - [X] Guided Program – Team Weight Loss
 - [X] 1 – Most Rainfall in the USA
 - [X] 3 – Softball Scoreboard
-- [ ] 5 – Fractional Calculator
+- [X] 5 – Fractional Calculator
