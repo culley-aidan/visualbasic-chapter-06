@@ -43,6 +43,9 @@ Public Class frmFactorial
                 ElseIf intRequestedEntries = 0 Or intRequestedEntries < 0 Then
                     strInputMessage = strNegativeError
                     strFactorialMax = InputBox(strInputMessage, strInputHeading, " ")
+                Else
+                    strInputMessage = strNonNumericError
+                    strFactorialMax = InputBox(strInputMessage, strInputHeading, " ")
                 End If
             Else
                 strInputMessage = strNonNumericError
